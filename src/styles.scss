@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  button {
+    margin-left: 10px;
+    background: rgb(0, 195, 255);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  input[type='checkbox'] {
+    margin-right: 10px;
+  }
+  

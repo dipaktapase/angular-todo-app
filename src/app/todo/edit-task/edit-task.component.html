@@ -1,0 +1,24 @@
+<!-- <p>edit-task works!</p> -->
+
+<!-- <h1>Edit Tasks</h1>
+<input [(ngModel)]="title"/>
+<input [(ngModel)]="workedHour"/>
+<button (click)="editTask()">Add Task</button>
+<br/>
+<br/>
+<a routerLink="/tasks">Back</a> -->
+
+<h1>Edit Task</h1>
+
+<label for="title">Task Title: </label>
+<input id="title" [(ngModel)]="title" type="text"/>
+<br/> <br/>
+
+<label for="workedHour">workedHour:</label>
+<input id="workedHour" [(ngModel)]="workedHour" type="number"/>
+<br/> <br/>
+
+<button (click)="editTask()">Save Changes</button>
+<br/> <br/>
+
+<a routerLink="/tasks">Back</a>

@@ -1,0 +1,57 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    // border: #080808;
+    // border-style: solid;
+  }
+
+//   tbody {
+//     align-items: right;
+//   }
+
+.btnn {
+    text-align: right;
+}
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  button {
+    margin-left: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  a {
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #4caf50;
+    padding: 5px;   
+    color: white;
+    border-radius: 5px;
+  }
+  
+  a:hover {
+    background-color: #45a049;
+  }
+  
