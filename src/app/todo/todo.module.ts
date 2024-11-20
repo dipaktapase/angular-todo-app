@@ -8,7 +8,6 @@ import { TaskItemComponent } from './task-item/task-item.component';
 import { FormsModule } from '@angular/forms';
 import { EditTaskComponent } from './edit-task/edit-task.component';
 
-
 @NgModule({
   declarations: [
     TaskListComponent,
@@ -16,10 +15,6 @@ import { EditTaskComponent } from './edit-task/edit-task.component';
     TaskItemComponent,
     EditTaskComponent,
   ],
-  imports: [
-    CommonModule,
-    TodoRoutingModule,
-    FormsModule
-  ]
+  imports: [CommonModule, TodoRoutingModule, FormsModule],
 })
-export class TodoModule { }
+export class TodoModule {}

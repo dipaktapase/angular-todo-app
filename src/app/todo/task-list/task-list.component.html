@@ -35,23 +35,23 @@
   <thead>
     <th>Tasks</th>
     <th>Pending Hours</th>
-    <th>Worked Hours</th> 
-    <th>Actions</th> 
+    <th>Worked Hours</th>
+    <th>Actions</th>
   </thead>
 
   <tbody>
     <tr *ngFor="let task of tasks">
-      <td>{{task.title}}</td>
-       <td>{{task.timeleft}}</td>
-       <td>
-        {{task.workedHour}}
-      </td>  
+      <td>{{ task.title }}</td>
+      <td>{{ task.timeleft }}</td>
       <td>
-         <button [routerLink]="['/edit-task', task.id]">Edit</button>
+        {{ task.workedHour }}
+      </td>
+      <td>
+        <button [routerLink]="['/edit-task', task.id]">Edit</button>
         <button class="btnn" (click)="deleteTask(task.id)">Delete</button>
       </td>
     </tr>
   </tbody>
 </table>
-<br/>
+<br />
 <a routerLink="/add-task">Add Task</a>

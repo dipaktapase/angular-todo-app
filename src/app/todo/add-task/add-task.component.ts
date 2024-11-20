@@ -13,8 +13,6 @@ export class AddTaskComponent {
 
   constructor(private taskService: TaskService, private router: Router) {}
 
-  
-
   addTask(): void {
     if (this.title.trim()) {
       this.taskService.addTask(this.title, this.timeleft);

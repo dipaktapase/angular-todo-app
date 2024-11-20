@@ -5,7 +5,7 @@ import { Task } from '../tasks';
 @Component({
   selector: 'app-task-list',
   templateUrl: './task-list.component.html',
-  styleUrls: ['./task-list.component.scss']
+  styleUrls: ['./task-list.component.scss'],
 })
 export class TaskListComponent {
   tasks: Task[] = [];
@@ -17,7 +17,7 @@ export class TaskListComponent {
 
     setInterval(() => {
       this.tasks = this.taskService.getTasks();
-    }, 10000)
+    }, 10000);
   }
 
   deleteTask(id: number): void {
@@ -26,15 +26,6 @@ export class TaskListComponent {
   }
 
   editTask(id: number, newTitle: string, workedHour: number): void {
-    this.taskService.updateTask(id, newTitle, workedHour)
+    this.taskService.updateTask(id, newTitle, workedHour);
   }
-
-  // toggleCompletion(id: number): void {
-  //   this.taskService.toggleTaskCompletion(id);
-  // }
-
-    // getRemainingTime(task: Task): string {
-  //   return this.taskService.getRemainingTime(task);
-  // }
-
 }
